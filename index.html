@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HFBoost — Get Your AI Models Trending on Hugging Face</title>
+    <meta name="description" content="Professional community promotion service for Hugging Face. Boost your model likes, downloads, paper upvotes, and followers organically.">
+    <meta name="keywords" content="Hugging Face, model promotion, AI trending, boost downloads, boost likes, paper upvotes, HF trending, AI marketing, model visibility, machine learning promotion">
+    <meta name="author" content="HFBoost">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hfboost.co/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hfboost.co/">
+    <meta property="og:title" content="HFBoost — Get Your AI Models Trending on Hugging Face">
+    <meta property="og:description" content="Professional community promotion service for Hugging Face. Boost your model likes, downloads, paper upvotes, and followers organically. Trusted by 500+ AI teams worldwide.">
+    <meta property="og:image" content="https://hfboost.co/og-image.png">
+    <meta property="og:site_name" content="HFBoost">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://hfboost.co/">
+    <meta name="twitter:title" content="HFBoost — Get Your AI Models Trending on Hugging Face">
+    <meta name="twitter:description" content="Boost your Hugging Face model likes, downloads, paper upvotes & followers organically. Results in 48 hours.">
+    <meta name="twitter:image" content="https://hfboost.co/og-image.png">
+    <meta name="twitter:site" content="@hfboost">
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#FF9D00">
+    <meta name="apple-mobile-web-app-title" content="HFBoost">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "HFBoost",
+        "url": "https://hfboost.co",
+        "logo": "https://hfboost.co/logo.svg",
+        "description": "Professional community promotion service for AI models on Hugging Face. Boost likes, downloads, paper upvotes, and followers organically.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "hello@hfboost.co",
+            "contactType": "customer service",
+            "availableLanguage": ["English"]
+        },
+        "sameAs": [
+            "https://twitter.com/hfboost",
+            "https://t.me/hfboost"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "HFBoost",
+        "url": "https://hfboost.co",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://hfboost.co/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is this safe for my Hugging Face account or model?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We use a natural drip-feed approach that distributes engagement over multiple days using genuine accounts from our developer community. This mimics organic growth patterns and stays well within normal activity ranges."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does delivery take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Starter packages begin delivery within 12 hours and complete in 24-48 hours. Growth packages take 48-72 hours. Enterprise campaigns run over 5-7 days for maximum natural appearance."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What payment methods do you accept?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We accept all major credit/debit cards via Stripe, as well as cryptocurrency payments including USDT, USDC, BTC, and ETH via Coinbase Commerce."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Will the likes or downloads drop after delivery?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our Enterprise plan includes a 30-day retention guarantee. We monitor your metrics after delivery and top up any minor fluctuations at no extra cost. For Starter and Growth plans, typical retention rates exceed 95% after 60 days."
+                }
+            }
+        ]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF9D00;
+            --primary-dark: #E68A00;
+            --accent: #FFD21E;
+            --bg-dark: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card-hover: #1a1a28;
+            --text: #e4e4e7;
+            --text-muted: #9494a0;
+            --text-bright: #ffffff;
+            --border: #2a2a3a;
+            --gradient-1: linear-gradient(135deg, #FF9D00, #FFD21E);
+            --gradient-2: linear-gradient(135deg, #FF9D00 0%, #FF6B6B 100%);
+            --gradient-3: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --shadow: 0 4px 30px rgba(255, 157, 0, 0.1);
+            --radius: 16px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-dark); }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
+
+        /* Utility */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary);
+            margin-bottom: 16px;
+            background: rgba(255, 157, 0, 0.08);
+            padding: 8px 16px;
+            border-radius: 100px;
+            border: 1px solid rgba(255, 157, 0, 0.15);
+        }
+
+        .section-title {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 800;
+            color: var(--text-bright);
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 48px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: #000;
+            box-shadow: 0 4px 20px rgba(255, 157, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(255, 157, 0, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: rgba(255, 157, 0, 0.05);
+        }
+
+        /* Background effects */
+        .bg-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.07;
+            pointer-events: none;
+        }
+
+        /* ====== NAVBAR ====== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 16px 0;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(10, 10, 15, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 12px 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--text-bright);
+            text-decoration: none;
+        }
+
+        .nav-logo svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .nav-logo span {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-bright);
+        }
+
+        .nav-cta {
+            background: var(--gradient-1);
+            color: #000 !important;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-weight: 600 !important;
+        }
+
+        .nav-cta:hover {
+            opacity: 0.9;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* ====== HERO ====== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            overflow: hidden;
+        }
+
+        .hero .bg-glow {
+            top: -200px;
+            right: -200px;
+            background: var(--primary);
+        }
+
+        .hero .bg-glow:nth-child(2) {
+            bottom: -200px;
+            left: -200px;
+            background: #764ba2;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 157, 0, 0.08);
+            border: 1px solid rgba(255, 157, 0, 0.2);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 13px;
+            color: var(--primary);
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .hero-badge .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22c55e;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 6vw, 64px);
+            font-weight: 900;
+            line-height: 1.1;
+            color: var(--text-bright);
+            margin-bottom: 24px;
+        }
+
+        .hero h1 .highlight {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 520px;
+            line-height: 1.8;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        .hero-stat h3 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--text-bright);
+        }
+
+        .hero-stat h3 span {
+            color: var(--primary);
+        }
+
+        .hero-stat p {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* Hero visual */
+        .hero-visual {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-1);
+        }
+
+        .model-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .model-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .model-info h4 {
+            color: var(--text-bright);
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .model-info p {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .metric-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .metric-row:last-child {
+            border: none;
+        }
+
+        .metric-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .metric-value {
+            font-weight: 700;
+            color: var(--text-bright);
+            font-size: 15px;
+        }
+
+        .metric-change {
+            color: #22c55e;
+            font-size: 12px;
+            font-weight: 600;
+            background: rgba(34, 197, 94, 0.1);
+            padding: 2px 8px;
+            border-radius: 6px;
+            margin-left: 8px;
+        }
+
+        .trending-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 157, 0, 0.1);
+            border: 1px solid rgba(255, 157, 0, 0.2);
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        /* Floating elements */
+        .float-card {
+            position: absolute;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 14px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            animation: float 6s ease-in-out infinite;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            z-index: 2;
+        }
+
+        .float-card.fc1 {
+            top: -20px;
+            right: -20px;
+            color: #22c55e;
+        }
+
+        .float-card.fc2 {
+            bottom: 40px;
+            left: -30px;
+            color: var(--primary);
+            animation-delay: -2s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        /* ====== LOGOS / TRUST ====== */
+        .trust-bar {
+            padding: 60px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .trust-bar p {
+            text-align: center;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+        }
+
+        .trust-logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+            opacity: 0.4;
+        }
+
+        .trust-logos span {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: -0.5px;
+        }
+
+        /* ====== SERVICES ====== */
+        .services {
+            position: relative;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 36px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            border-color: rgba(255, 157, 0, 0.3);
+            transform: translateY(-4px);
+            background: var(--bg-card-hover);
+        }
+
+        .service-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+            background: rgba(255, 157, 0, 0.08);
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-bright);
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .service-tag {
+            display: inline-block;
+            margin-top: 16px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--primary);
+            background: rgba(255, 157, 0, 0.08);
+            padding: 4px 12px;
+            border-radius: 6px;
+        }
+
+        /* ====== HOW IT WORKS ====== */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            position: relative;
+        }
+
+        .steps-grid::before {
+            content: '';
+            position: absolute;
+            top: 36px;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: var(--border);
+            z-index: 0;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-number {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 0 auto 20px;
+            transition: all 0.3s ease;
+        }
+
+        .step:hover .step-number {
+            background: var(--gradient-1);
+            color: #000;
+            border-color: transparent;
+            transform: scale(1.1);
+        }
+
+        .step h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-bright);
+            margin-bottom: 8px;
+        }
+
+        .step p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* ====== PRICING ====== */
+        .pricing {
+            position: relative;
+        }
+
+        .pricing .bg-glow {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--primary);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .pricing-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .pricing-card.popular {
+            border-color: var(--primary);
+            background: linear-gradient(180deg, rgba(255, 157, 0, 0.05) 0%, var(--bg-card) 50%);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-1);
+            color: #000;
+            padding: 6px 20px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .pricing-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-bright);
+            margin-bottom: 4px;
+        }
+
+        .pricing-card .subtitle {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .price {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .price .currency {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+
+        .price .amount {
+            font-size: 56px;
+            font-weight: 900;
+            color: var(--text-bright);
+            line-height: 1;
+        }
+
+        .price .period {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .price-note {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .pricing-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 8px 0;
+            font-size: 14px;
+            color: var(--text);
+        }
+
+        .pricing-features li .check {
+            color: #22c55e;
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .pricing-card .btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* ====== TESTIMONIALS ====== */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px;
+        }
+
+        .testimonial-stars {
+            color: var(--accent);
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-card blockquote {
+            font-size: 15px;
+            color: var(--text);
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            color: var(--text-bright);
+            font-size: 14px;
+        }
+
+        .testimonial-role {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* ====== FAQ ====== */
+        .faq-list {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            background: var(--bg-card);
+            transition: border-color 0.3s;
+        }
+
+        .faq-item:hover {
+            border-color: rgba(255, 157, 0, 0.2);
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 22px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-bright);
+            text-align: left;
+        }
+
+        .faq-question .icon {
+            font-size: 20px;
+            color: var(--primary);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 16px;
+        }
+
+        .faq-item.active .faq-question .icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-answer-inner {
+            padding: 0 28px 22px;
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* ====== CTA ====== */
+        .cta-section {
+            text-align: center;
+            position: relative;
+        }
+
+        .cta-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 64px 48px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-1);
+        }
+
+        .cta-box h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 800;
+            color: var(--text-bright);
+            margin-bottom: 16px;
+        }
+
+        .cta-box p {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ====== FOOTER ====== */
+        .footer {
+            border-top: 1px solid var(--border);
+            padding: 60px 0 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-top: 12px;
+            max-width: 300px;
+        }
+
+        .footer h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-bright);
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .payment-methods {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .payment-methods span {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        /* ====== ORDER MODAL ====== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(8px);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 520px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .modal h2 {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--text-bright);
+            margin-bottom: 8px;
+        }
+
+        .modal .modal-subtitle {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text-bright);
+            font-size: 14px;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-group select option {
+            background: var(--bg-dark);
+        }
+
+        .form-hint {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* ====== RESPONSIVE ====== */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-visual {
+                max-width: 500px;
+            }
+
+            .steps-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .steps-grid::before {
+                display: none;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 0;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .hero-stats {
+                gap: 24px;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 420px;
+                margin: 0 auto;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .float-card {
+                display: none;
+            }
+        }
+
+        /* Animations on scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Mobile menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 10, 15, 0.98);
+            z-index: 9998;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            color: var(--text-bright);
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .mobile-menu-close {
+            position: absolute;
+            top: 20px;
+            right: 24px;
+            background: none;
+            border: none;
+            color: var(--text);
+            font-size: 28px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left cat ear -->
+                    <path d="M58 65 L78 8 Q80 3 85 5 L108 52" fill="#FFD21E" stroke="#FF9D00" stroke-width="3"/>
+                    <path d="M68 58 L82 20 L100 52" fill="#FFB347"/>
+                    <!-- Right cat ear -->
+                    <path d="M198 65 L178 8 Q176 3 171 5 L148 52" fill="#FFD21E" stroke="#FF9D00" stroke-width="3"/>
+                    <path d="M188 58 L174 20 L156 52" fill="#FFB347"/>
+                    <!-- Original HF face (shifted down by 12 to make room for ears) -->
+                    <g transform="translate(12, 24)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M203.21 123.685V123.194C203.21 81.34 169.292 47.411 127.435 47.411C85.5791 47.411 51.648 81.342 51.648 123.194V123.358C51.646 123.467 51.645 123.576 51.648 123.685C51.6529 123.848 51.6546 124.011 51.653 124.174L51.6581 124.534L51.661 124.663C51.661 124.723 51.6631 124.782 51.6651 124.842C51.6681 124.937 51.67 125.033 51.67 125.128L51.681 125.517L51.697 125.974L51.702 126.124L51.722 126.597V126.62C51.73 126.805 51.7401 126.989 51.7491 127.173L51.75 127.187C51.76 127.375 51.7701 127.564 51.7821 127.753C51.7921 127.927 51.802 128.101 51.815 128.275L51.8171 128.306C51.8258 128.455 51.8358 128.605 51.847 128.754L51.85 128.794L51.883 129.226L51.8861 129.254C51.8921 129.338 51.898 129.422 51.906 129.503C51.9658 130.224 52.0355 130.945 52.1151 131.664L52.12 131.709L52.181 132.238L52.2491 132.793L52.299 133.17L52.322 133.347C52.3753 133.755 52.433 134.162 52.495 134.568L52.4991 134.595L52.558 134.979C52.8435 136.808 53.1971 138.626 53.618 140.429L53.6231 140.451L53.655 140.586L53.746 140.971L53.802 140.904C56.002 138.274 59.158 136.824 62.689 136.824C65.519 136.824 68.4221 137.76 71.3321 139.605C73.2621 140.831 75.3961 143.002 77.5921 145.733C79.6241 142.911 82.4721 141.035 85.7301 140.523C86.3513 140.425 86.9792 140.376 87.6081 140.375C95.0441 140.375 99.523 146.828 101.215 152.633C102.051 154.594 106.08 163.526 112.156 169.568C121.392 178.795 123.703 188.316 119.132 198.511H119.148C119.459 198.546 119.772 198.578 120.087 198.607C120.274 198.625 120.46 198.643 120.648 198.659L120.714 198.665L121.127 198.7L121.507 198.73C121.869 198.758 122.232 198.784 122.596 198.807L122.885 198.824L123.114 198.838L123.256 198.846L123.703 198.869L123.825 198.874L124.294 198.895L124.816 198.915L125.235 198.927L125.305 198.929C125.394 198.933 125.483 198.936 125.572 198.936L125.668 198.939C126.258 198.953 126.847 198.96 127.437 198.959H128.063L128.51 198.954C128.62 198.949 128.729 198.949 128.84 198.949H129.014L129.165 198.945C129.224 198.943 129.283 198.941 129.343 198.941H129.522L129.873 198.932L130.401 198.914L130.982 198.888C131.15 198.882 131.316 198.873 131.482 198.865L131.661 198.854L131.927 198.84L132.083 198.831L132.201 198.823L132.738 198.788L133.274 198.749L133.761 198.71L134.103 198.681L134.479 198.647C135.107 198.591 135.733 198.525 136.359 198.45L136.786 198.399C132.287 188.247 134.616 178.767 143.813 169.577C149.876 163.519 153.905 154.587 154.745 152.625C156.438 146.821 160.914 140.368 168.352 140.368C168.981 140.368 169.61 140.418 170.231 140.516C173.486 141.028 176.334 142.904 178.369 145.726C180.566 142.996 182.699 140.823 184.63 139.597C187.539 137.753 190.445 136.817 193.272 136.817C196.388 136.817 199.212 137.947 201.345 140.02C201.384 139.851 201.422 139.682 201.459 139.512L201.568 139.006C201.607 138.821 201.646 138.636 201.683 138.451C201.749 138.124 201.815 137.797 201.878 137.467C201.944 137.125 202.007 136.781 202.067 136.437L202.098 136.251C202.117 136.141 202.135 136.031 202.156 135.92C202.19 135.748 202.218 135.576 202.246 135.402L202.257 135.336L202.328 134.883L202.398 134.424V134.42C202.449 134.081 202.497 133.742 202.542 133.403L202.553 133.319L202.616 132.841L202.667 132.433L202.757 131.629L202.792 131.306L202.801 131.218C202.82 131.044 202.838 130.87 202.854 130.696V130.682C202.867 130.544 202.881 130.405 202.893 130.266C202.964 129.478 203.024 128.686 203.072 127.891C203.081 127.761 203.088 127.63 203.096 127.499V127.493L203.122 127.002L203.128 126.892C203.144 126.56 203.158 126.228 203.169 125.896V125.884L203.174 125.754C203.179 125.645 203.183 125.535 203.183 125.425L203.185 125.381C203.189 125.278 203.193 125.172 203.193 125.067L203.196 124.977C203.199 124.872 203.202 124.768 203.202 124.663L203.204 124.574C203.207 124.441 203.21 124.307 203.21 124.174V123.685ZM108.638 199.391C114.64 190.59 114.214 183.984 105.98 175.754C97.7441 167.523 92.951 155.487 92.951 155.487C92.951 155.487 91.1621 148.496 87.0821 149.138C83.0021 149.78 80.0091 160.227 88.5521 166.622C97.0941 173.017 86.8521 177.353 83.5641 171.352C80.2761 165.35 71.299 149.923 66.645 146.972C61.991 144.021 58.718 145.675 59.815 151.757C60.36 154.776 65.4281 159.929 70.1631 164.743C74.9671 169.627 79.428 174.163 78.474 175.768C76.581 178.955 69.9141 172.023 69.9141 172.023C69.9141 172.023 49.038 153.025 44.494 157.976C40.304 162.539 46.765 166.418 56.7211 172.397C57.5671 172.905 58.4391 173.429 59.3321 173.969C70.7231 180.865 71.609 182.684 69.992 185.293C69.395 186.257 65.582 183.968 60.892 181.153C52.897 176.352 42.3551 170.023 40.8661 175.688C39.5781 180.591 47.334 183.595 54.368 186.32C60.228 188.59 65.5881 190.666 64.7991 193.484C63.9821 196.406 59.5531 193.969 54.7121 191.305C49.2771 188.314 43.3221 185.038 41.3731 188.735C37.6901 195.725 66.7831 203.954 67.0231 204.015C76.4231 206.453 100.295 211.619 108.638 199.391ZM147.303 199.391C141.301 190.59 141.727 183.984 149.962 175.754C158.197 167.523 162.99 155.487 162.99 155.487C162.99 155.487 164.779 148.496 168.859 149.138C172.939 149.78 175.932 160.227 167.39 166.622C158.847 173.017 169.089 177.353 172.377 171.352C175.666 165.35 184.637 149.923 189.291 146.972C193.945 144.021 197.22 145.675 196.122 151.757C195.578 154.776 190.509 159.929 185.774 164.744C180.97 169.628 176.509 174.163 177.462 175.768C179.355 178.955 186.027 172.019 186.027 172.019C186.027 172.019 206.902 153.022 211.448 157.973C215.637 162.535 209.176 166.415 199.219 172.394C198.348 172.917 197.478 173.441 196.609 173.966C185.218 180.862 184.332 182.681 185.948 185.289C186.546 186.254 190.359 183.964 195.048 181.149C203.044 176.349 213.586 170.019 215.075 175.685C216.364 180.588 208.607 183.592 201.573 186.317C195.713 188.587 190.353 190.663 191.141 193.481C191.957 196.402 196.385 193.965 201.225 191.301C206.66 188.31 212.616 185.032 214.564 188.732C218.248 195.726 189.15 203.947 188.915 204.007C179.515 206.453 155.643 211.619 147.303 199.391Z" fill="#FFD21E"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M152.047 102.567C153.229 102.985 154.108 104.257 154.944 105.468C156.074 107.104 157.126 108.627 158.74 107.769C160.644 106.756 162.205 105.202 163.225 103.302C164.246 101.402 164.681 99.2427 164.475 97.096C164.321 95.4908 163.813 93.9398 162.987 92.5548C162.161 91.1697 161.038 89.985 159.7 89.0862C158.361 88.1874 156.839 87.5968 155.245 87.3569C153.65 87.117 152.022 87.2339 150.478 87.699C148.934 88.1639 147.513 88.9653 146.316 90.0455C145.119 91.1257 144.176 92.4578 143.556 93.946C142.936 95.4342 142.653 97.0415 142.728 98.652C142.804 100.263 143.235 101.836 143.992 103.26C144.74 104.667 146.4 104.003 148.152 103.302C149.525 102.753 150.956 102.181 152.047 102.567ZM100.672 102.567C99.49 102.985 98.611 104.258 97.775 105.468C96.645 107.105 95.592 108.627 93.979 107.769C91.5845 106.501 89.7482 104.386 88.8278 101.838C87.9075 99.2895 87.9692 96.4896 89.0008 93.9841C90.0324 91.4786 91.9601 89.4471 94.408 88.2855C96.856 87.1239 99.6488 86.9156 102.242 87.701C104.307 88.3228 106.141 89.5427 107.513 91.2065C108.885 92.8704 109.732 94.9035 109.949 97.049C110.165 99.1945 109.74 101.356 108.728 103.26C107.979 104.667 106.319 104.003 104.567 103.303C103.193 102.753 101.764 102.181 100.672 102.567ZM144.099 149.318C152.242 142.903 155.233 132.429 155.233 125.977C155.233 120.877 151.802 122.482 146.309 125.202L145.999 125.355C140.957 127.852 134.245 131.177 126.877 131.177C119.508 131.177 112.796 127.852 107.755 125.354C102.084 122.545 98.527 120.783 98.527 125.978C98.527 132.634 101.709 143.563 110.443 149.912C111.596 147.573 113.219 145.497 115.211 143.813C117.202 142.129 119.52 140.874 122.018 140.126C122.89 139.866 123.788 141.367 124.707 142.904C125.594 144.386 126.501 145.902 127.423 145.902C128.406 145.902 129.371 144.408 130.314 142.95C131.299 141.425 132.26 139.94 133.189 140.237C137.864 141.738 141.775 144.993 144.099 149.318Z" fill="#32343D"/>
+                    <path d="M144.097 149.317C139.856 152.659 134.219 154.9 126.878 154.9C119.981 154.9 114.587 152.922 110.443 149.911C111.596 147.572 113.219 145.495 115.211 143.812C117.202 142.128 119.52 140.873 122.018 140.125C123.73 139.614 125.545 145.901 127.423 145.901C129.433 145.901 131.37 139.655 133.189 140.236C137.863 141.738 141.773 144.993 144.097 149.317Z" fill="#FF323D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M81.2 111.64C80.2312 112.288 79.1173 112.687 77.9572 112.801C76.7971 112.916 75.6267 112.742 74.55 112.295C73.6893 111.94 72.9072 111.418 72.2488 110.759C71.5903 110.101 71.0684 109.319 70.713 108.458C70.267 107.381 70.0935 106.211 70.2082 105.051C70.3228 103.891 70.7219 102.777 71.37 101.808C72.1488 100.642 73.2558 99.7333 74.5512 99.1967C75.8466 98.6601 77.272 98.5197 78.6471 98.7935C80.0223 99.0672 81.2853 99.7427 82.2764 100.734C83.2675 101.726 83.9422 102.99 84.215 104.365C84.4883 105.74 84.3477 107.165 83.8113 108.46C83.2748 109.755 82.3654 110.861 81.2 111.64ZM182.613 111.64C181.644 112.288 180.53 112.687 179.37 112.801C178.209 112.916 177.039 112.742 175.962 112.295C175.101 111.939 174.319 111.418 173.661 110.759C173.003 110.101 172.481 109.319 172.125 108.458C171.68 107.381 171.507 106.211 171.621 105.051C171.736 103.891 172.135 102.777 172.782 101.808C173.364 100.936 174.133 100.205 175.032 99.6658C175.931 99.1269 176.938 98.7942 177.981 98.6917C179.025 98.5891 180.078 98.7193 181.064 99.0728C182.051 99.4264 182.947 99.9944 183.688 100.736C184.68 101.727 185.355 102.99 185.628 104.365C185.902 105.74 185.761 107.165 185.224 108.46C184.687 109.755 183.779 110.861 182.613 111.64Z" fill="#FFAD03"/>
+                    </g>
+                </svg>
+                HF<span>Boost</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="blog/">Blog</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#order" class="nav-cta" onclick="openModal(event)">Get Started →</a></li>
+            </ul>
+            <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" onclick="toggleMobileMenu()">✕</button>
+        <a href="#services" onclick="toggleMobileMenu()">Services</a>
+        <a href="#how-it-works" onclick="toggleMobileMenu()">How It Works</a>
+        <a href="#pricing" onclick="toggleMobileMenu()">Pricing</a>
+        <a href="blog/" onclick="toggleMobileMenu()">Blog</a>
+        <a href="#faq" onclick="toggleMobileMenu()">FAQ</a>
+        <a href="#order" class="btn btn-primary" onclick="openModal(event); toggleMobileMenu();">Get Started →</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="bg-glow"></div>
+        <div class="bg-glow"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="dot"></span>
+                        Trusted by 500+ AI Teams Worldwide
+                    </div>
+                    <h1>
+                        Get Your AI Model
+                        <span class="highlight">Trending</span> on
+                        Hugging Face
+                    </h1>
+                    <p>
+                        We distribute your models, datasets, and papers to our network of 10,000+ active AI developers. 
+                        Boost organic engagement, climb the leaderboard, and attract investors — all within 48 hours.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#pricing" class="btn btn-primary">View Packages →</a>
+                        <a href="#how-it-works" class="btn btn-outline">How It Works</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <h3>2.4M<span>+</span></h3>
+                            <p>Engagements delivered</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h3>500<span>+</span></h3>
+                            <p>Models boosted</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h3>48<span>h</span></h3>
+                            <p>Average delivery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="model-header">
+                            <div class="model-icon">🤗</div>
+                            <div class="model-info">
+                                <h4>your-org/awesome-model-7B</h4>
+                                <p>Updated 2 hours ago • Transformer</p>
+                            </div>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">❤️ Likes</span>
+                            <span>
+                                <span class="metric-value">1,247</span>
+                                <span class="metric-change">+380</span>
+                            </span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">⬇️ Downloads</span>
+                            <span>
+                                <span class="metric-value">48,392</span>
+                                <span class="metric-change">+12,500</span>
+                            </span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">👥 Followers</span>
+                            <span>
+                                <span class="metric-value">864</span>
+                                <span class="metric-change">+200</span>
+                            </span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">📄 Paper Upvotes</span>
+                            <span>
+                                <span class="metric-value">156</span>
+                                <span class="metric-change">+45</span>
+                            </span>
+                        </div>
+                        <div class="trending-badge">
+                            🔥 Trending #3 in Text Generation
+                        </div>
+                    </div>
+                    <div class="float-card fc1">📈 +380 likes in 48h</div>
+                    <div class="float-card fc2">🚀 Now Trending!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+        <div class="container">
+            <p>Trusted by teams building with</p>
+            <div class="trust-logos">
+                <span>🤗 Hugging Face</span>
+                <span>🦙 LLaMA</span>
+                <span>⚡ vLLM</span>
+                <span>🔬 ArXiv</span>
+                <span>🐙 GitHub</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">📦 Services</span>
+                <h2 class="section-title">Everything You Need to<br>Dominate the Leaderboard</h2>
+                <p class="section-subtitle">We offer comprehensive community promotion services across the entire Hugging Face ecosystem.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">❤️</div>
+                    <h3>Model & Space Likes</h3>
+                    <p>Increase the like count on your models, datasets, and Spaces. Higher likes signal quality and push you into trending categories faster.</p>
+                    <span class="service-tag">Most Popular</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">⬇️</div>
+                    <h3>Downloads Boost</h3>
+                    <p>Drive authentic download numbers to demonstrate adoption velocity. Perfect for investor pitches and benchmarking credibility.</p>
+                    <span class="service-tag">High Impact</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">📄</div>
+                    <h3>Daily Paper Upvotes</h3>
+                    <p>Get your paper featured on the Hugging Face Daily Papers trending page. Maximize visibility among the global AI research community.</p>
+                    <span class="service-tag">Research</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">👥</div>
+                    <h3>Organization Followers</h3>
+                    <p>Build your organization's follower base to establish authority. A large follower count builds immediate trust with new visitors.</p>
+                    <span class="service-tag">Branding</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">⭐</div>
+                    <h3>GitHub Stars</h3>
+                    <p>Complement your HF presence with GitHub social proof. We also offer stars, forks, and watchers for your open-source repos.</p>
+                    <span class="service-tag">Add-on</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">🎯</div>
+                    <h3>Custom Campaign</h3>
+                    <p>Need a bespoke strategy? We design full-scale launch campaigns including coordinated timing, drip-feed delivery, and multi-platform coverage.</p>
+                    <span class="service-tag">Enterprise</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how-it-works" style="background: rgba(255,255,255,0.01);">
+        <div class="container">
+            <div class="reveal" style="text-align:center;">
+                <span class="section-label">⚡ Process</span>
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle" style="margin-left:auto;margin-right:auto;">Four simple steps to get your model trending. Average delivery time is just 24–72 hours.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step reveal">
+                    <div class="step-number">1</div>
+                    <h3>Choose a Package</h3>
+                    <p>Select the service tier that matches your goals and budget.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">2</div>
+                    <h3>Submit Your Link</h3>
+                    <p>Share your HF model, dataset, or paper URL with us.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">3</div>
+                    <h3>We Activate</h3>
+                    <p>Our network engages organically with natural drip-feed pacing.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">4</div>
+                    <h3>Track Results</h3>
+                    <p>Receive a delivery report with before/after metrics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section pricing" id="pricing">
+        <div class="bg-glow"></div>
+        <div class="container">
+            <div class="reveal" style="text-align:center;">
+                <span class="section-label">💰 Pricing</span>
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle" style="margin-left:auto;margin-right:auto;">No hidden fees. Pay once, get results. We also accept cryptocurrency.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Starter -->
+                <div class="pricing-card reveal">
+                    <h3>Starter</h3>
+                    <p class="subtitle">For indie developers & researchers</p>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">49</span>
+                    </div>
+                    <p class="price-note">One-time payment • Delivered in 48h</p>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 50 Model / Dataset Likes</li>
+                        <li><span class="check">✓</span> 200 Downloads</li>
+                        <li><span class="check">✓</span> 10 Paper Upvotes</li>
+                        <li><span class="check">✓</span> Natural drip-feed delivery</li>
+                        <li><span class="check">✓</span> Delivery report</li>
+                        <li><span class="check">✓</span> Email support</li>
+                    </ul>
+                    <a href="#order" class="btn btn-outline" onclick="openModal(event, 'Starter - $49')">Get Starter →</a>
+                </div>
+                <!-- Growth (Popular) -->
+                <div class="pricing-card popular reveal">
+                    <div class="popular-badge">🔥 Most Popular</div>
+                    <h3>Growth</h3>
+                    <p class="subtitle">For AI startups & product launches</p>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">199</span>
+                    </div>
+                    <p class="price-note">One-time payment • Delivered in 72h</p>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 200 Model / Dataset Likes</li>
+                        <li><span class="check">✓</span> 1,000 Downloads</li>
+                        <li><span class="check">✓</span> 50 Paper Upvotes</li>
+                        <li><span class="check">✓</span> 50 Organization Followers</li>
+                        <li><span class="check">✓</span> Trending category targeting</li>
+                        <li><span class="check">✓</span> Priority drip-feed delivery</li>
+                        <li><span class="check">✓</span> Detailed analytics report</li>
+                        <li><span class="check">✓</span> Priority Telegram support</li>
+                    </ul>
+                    <a href="#order" class="btn btn-primary" onclick="openModal(event, 'Growth - $199')">Get Growth →</a>
+                </div>
+                <!-- Enterprise -->
+                <div class="pricing-card reveal">
+                    <h3>Enterprise</h3>
+                    <p class="subtitle">For token launches & VC-backed teams</p>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">499</span>
+                    </div>
+                    <p class="price-note">One-time payment • 5–7 day campaign</p>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 500+ Model / Dataset Likes</li>
+                        <li><span class="check">✓</span> 5,000+ Downloads</li>
+                        <li><span class="check">✓</span> 100 Paper Upvotes</li>
+                        <li><span class="check">✓</span> 200 Organization Followers</li>
+                        <li><span class="check">✓</span> 100 GitHub Stars (bonus)</li>
+                        <li><span class="check">✓</span> Full trending strategy</li>
+                        <li><span class="check">✓</span> Slow organic drip-feed</li>
+                        <li><span class="check">✓</span> Dedicated account manager</li>
+                        <li><span class="check">✓</span> 30-day retention guarantee</li>
+                    </ul>
+                    <a href="#order" class="btn btn-outline" onclick="openModal(event, 'Enterprise - $499')">Get Enterprise →</a>
+                </div>
+            </div>
+            <p style="text-align:center; color:var(--text-muted); font-size:14px; margin-top:32px;">
+                🔒 Need a custom volume? <a href="#order" onclick="openModal(event, 'Custom')" style="color:var(--primary); text-decoration:underline;">Contact us</a> for bulk discounts.
+                &nbsp;•&nbsp; We accept <strong style="color:var(--text);">USDT, USDC, BTC, ETH</strong> via crypto payment.
+            </p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" style="background: rgba(255,255,255,0.01);">
+        <div class="container">
+            <div class="reveal" style="text-align:center;">
+                <span class="section-label">💬 Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle" style="margin-left:auto;margin-right:auto;">Join hundreds of AI teams who've accelerated their visibility with HFBoost.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"We launched our 7B model and it was buried under thousands of repos. After using HFBoost, we hit #4 in Trending within 3 days. Our Series A investors literally saw us on the HF homepage."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <div class="testimonial-name">Marcus R.</div>
+                            <div class="testimonial-role">CTO, Stealth AI Startup (YC W24)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"The drip-feed approach is what sold me. Everything looked completely natural. Our paper went from 12 upvotes to 180+ and got featured in the Daily Papers roundup. Incredible ROI."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <div class="testimonial-name">Dr. Sarah K.</div>
+                            <div class="testimonial-role">ML Research Lead, European University</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"As an AI×Crypto project, social proof on Hugging Face was critical for our token launch. HFBoost delivered exactly what was promised, on time, and they accepted USDT. Will use again."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div>
+                            <div class="testimonial-name">Alex W.</div>
+                            <div class="testimonial-role">Founder, DecentraLLM (Web3 AI Protocol)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="reveal" style="text-align:center;">
+                <span class="section-label">❓ FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle" style="margin-left:auto;margin-right:auto;">Everything you need to know before getting started.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Is this safe for my Hugging Face account or model?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Yes. We use a natural drip-feed approach that distributes engagement over multiple days using genuine accounts from our developer community. This mimics organic growth patterns and stays well within normal activity ranges. We've delivered 500+ campaigns with a 100% safety record.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>How long does delivery take?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Starter packages begin delivery within 12 hours and complete in 24–48 hours. Growth packages take 48–72 hours. Enterprise campaigns run over 5–7 days for maximum natural appearance. We intentionally pace delivery to ensure the best results.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What payment methods do you accept?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            We accept all major credit/debit cards via Stripe, as well as cryptocurrency payments including USDT, USDC, BTC, and ETH via Coinbase Commerce. Crypto payments are confirmed instantly with no chargeback risk.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Will the likes / downloads drop after delivery?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Our Enterprise plan includes a 30-day retention guarantee. We monitor your metrics after delivery and top up any minor fluctuations at no extra cost. For Starter and Growth plans, typical retention rates exceed 95% after 60 days.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Can I get a custom volume or ongoing monthly plan?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Absolutely! We offer custom packages for high-volume needs and monthly retainer plans for teams that regularly publish models or papers. Reach out via our order form and select "Custom" to discuss your requirements with our team.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you offer GitHub Stars as well?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Yes! Our Enterprise package includes 100 GitHub Stars as a bonus. We also offer standalone GitHub promotion packages including stars, forks, and watchers. Ask us about bundled HF + GitHub deals for maximum cross-platform impact.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-box reveal">
+                <h2>Ready to Get Your Model <span style="background:var(--gradient-1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Trending</span>?</h2>
+                <p>Join 500+ AI teams who trust HFBoost to amplify their Hugging Face presence. First-time clients get 10% off with code <strong style="color:var(--primary);">FIRSTBOOST</strong>.</p>
+                <div class="cta-actions">
+                    <a href="#order" class="btn btn-primary" onclick="openModal(event)">🚀 Start Now — See Results in 48h</a>
+                    <a href="https://t.me/hfboost" target="_blank" class="btn btn-outline">💬 Chat on Telegram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <svg width="28" height="28" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Left cat ear -->
+                            <path d="M58 65 L78 8 Q80 3 85 5 L108 52" fill="#FFD21E" stroke="#FF9D00" stroke-width="3"/>
+                            <path d="M68 58 L82 20 L100 52" fill="#FFB347"/>
+                            <!-- Right cat ear -->
+                            <path d="M198 65 L178 8 Q176 3 171 5 L148 52" fill="#FFD21E" stroke="#FF9D00" stroke-width="3"/>
+                            <path d="M188 58 L174 20 L156 52" fill="#FFB347"/>
+                            <!-- Original HF face -->
+                            <g transform="translate(12, 24)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M203.21 123.685V123.194C203.21 81.34 169.292 47.411 127.435 47.411C85.5791 47.411 51.648 81.342 51.648 123.194V123.358C51.646 123.467 51.645 123.576 51.648 123.685C51.6529 123.848 51.6546 124.011 51.653 124.174L51.6581 124.534L51.661 124.663L51.67 125.128L51.681 125.517L51.697 125.974L51.702 126.124L51.722 126.597V126.62C51.73 126.805 51.7401 126.989 51.7491 127.173L51.75 127.187C51.76 127.375 51.7701 127.564 51.7821 127.753C51.7921 127.927 51.802 128.101 51.815 128.275L51.847 128.754L51.85 128.794L51.883 129.226L51.906 129.503C51.9658 130.224 52.0355 130.945 52.1151 131.664L52.12 131.709L52.181 132.238L52.2491 132.793L52.322 133.347C52.3753 133.755 52.433 134.162 52.495 134.568L52.558 134.979C52.8435 136.808 53.1971 138.626 53.618 140.429L53.6231 140.451L53.746 140.971L53.802 140.904C56.002 138.274 59.158 136.824 62.689 136.824C65.519 136.824 68.4221 137.76 71.3321 139.605C73.2621 140.831 75.3961 143.002 77.5921 145.733C79.6241 142.911 82.4721 141.035 85.7301 140.523C86.3513 140.425 86.9792 140.376 87.6081 140.375C95.0441 140.375 99.523 146.828 101.215 152.633C102.051 154.594 106.08 163.526 112.156 169.568C121.392 178.795 123.703 188.316 119.132 198.511H119.148C119.459 198.546 119.772 198.578 120.087 198.607L120.648 198.659L121.127 198.7L121.507 198.73C121.869 198.758 122.232 198.784 122.596 198.807L123.256 198.846L123.703 198.869L124.294 198.895L124.816 198.915L125.572 198.936C126.258 198.953 126.847 198.96 127.437 198.959H128.063L128.51 198.954C128.62 198.949 128.729 198.949 128.84 198.949H129.522L129.873 198.932L130.401 198.914L130.982 198.888C131.15 198.882 131.316 198.873 131.482 198.865L131.661 198.854L132.083 198.831L132.738 198.788L133.274 198.749L134.103 198.681L134.479 198.647C135.107 198.591 135.733 198.525 136.359 198.45L136.786 198.399C132.287 188.247 134.616 178.767 143.813 169.577C149.876 163.519 153.905 154.587 154.745 152.625C156.438 146.821 160.914 140.368 168.352 140.368C168.981 140.368 169.61 140.418 170.231 140.516C173.486 141.028 176.334 142.904 178.369 145.726C180.566 142.996 182.699 140.823 184.63 139.597C187.539 137.753 190.445 136.817 193.272 136.817C196.388 136.817 199.212 137.947 201.345 140.02C201.384 139.851 201.422 139.682 201.459 139.512L201.568 139.006C201.683 138.451 201.815 137.797 201.878 137.467C201.944 137.125 202.007 136.781 202.067 136.437C202.117 136.141 202.135 136.031 202.156 135.92C202.19 135.748 202.218 135.576 202.246 135.402L202.328 134.883L202.398 134.424C202.449 134.081 202.497 133.742 202.542 133.403L202.616 132.841L202.667 132.433L202.757 131.629L202.801 131.218C202.82 131.044 202.838 130.87 202.854 130.696C202.867 130.544 202.881 130.405 202.893 130.266C202.964 129.478 203.024 128.686 203.072 127.891C203.081 127.761 203.088 127.63 203.096 127.499L203.122 127.002L203.128 126.892C203.144 126.56 203.158 126.228 203.169 125.896L203.174 125.754C203.179 125.645 203.183 125.535 203.183 125.425C203.189 125.278 203.193 125.172 203.193 125.067L203.202 124.663C203.207 124.441 203.21 124.307 203.21 124.174V123.685Z" fill="#FFD21E"/>
+                            </g>
+                        </svg>
+                        HF<span>Boost</span>
+                    </a>
+                    <p>Professional community promotion services for AI teams. Helping you get discovered on Hugging Face since 2024.</p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Model Likes</a></li>
+                        <li><a href="#services">Downloads Boost</a></li>
+                        <li><a href="#services">Paper Upvotes</a></li>
+                        <li><a href="#services">Org Followers</a></li>
+                        <li><a href="#services">GitHub Stars</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="blog/">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hello@hfboost.co">hello@hfboost.co</a></li>
+                        <li><a href="https://t.me/hfboost" target="_blank">Telegram</a></li>
+                        <li><a href="https://twitter.com/hfboost" target="_blank">Twitter / X</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2024–2026 HFBoost. All rights reserved. This is an independent marketing service not affiliated with Hugging Face Inc.</span>
+                <div class="payment-methods">
+                    <span>💳 Stripe</span>
+                    <span>₿ BTC</span>
+                    <span>💲 USDT</span>
+                    <span>Ξ ETH</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ORDER MODAL -->
+    <div class="modal-overlay" id="orderModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <h2>🚀 Place Your Order</h2>
+            <p class="modal-subtitle">Fill in the details below and we'll start boosting within 12 hours.</p>
+            <form id="orderForm" onsubmit="submitOrder(event)">
+                <div class="form-group">
+                    <label>Your Email *</label>
+                    <input type="email" name="email" placeholder="you@company.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Hugging Face URL *</label>
+                    <input type="url" name="hf_url" placeholder="https://huggingface.co/your-org/your-model" required>
+                    <p class="form-hint">Model, Dataset, Space, Paper, or Organization page URL</p>
+                </div>
+                <div class="form-group">
+                    <label>Package *</label>
+                    <select name="package" id="packageSelect" required>
+                        <option value="">Select a package...</option>
+                        <option value="Starter - $49">⚡ Starter — $49</option>
+                        <option value="Growth - $199">🔥 Growth — $199 (Most Popular)</option>
+                        <option value="Enterprise - $499">🚀 Enterprise — $499</option>
+                        <option value="Custom">🎯 Custom (tell us what you need)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Payment Method *</label>
+                    <select name="payment" required>
+                        <option value="">Select payment method...</option>
+                        <option value="stripe">💳 Credit / Debit Card (Stripe)</option>
+                        <option value="usdt">💲 USDT (TRC-20 / ERC-20)</option>
+                        <option value="usdc">💲 USDC</option>
+                        <option value="btc">₿ Bitcoin</option>
+                        <option value="eth">Ξ Ethereum</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Promo Code</label>
+                    <input type="text" name="promo" placeholder="e.g. FIRSTBOOST">
+                </div>
+                <div class="form-group">
+                    <label>Additional Notes</label>
+                    <textarea name="notes" placeholder="Any specific requirements? e.g. delivery timing, target trending category, etc."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;">
+                    Submit Order →
+                </button>
+                <p style="text-align:center;font-size:12px;color:var(--text-muted);margin-top:12px;">
+                    🔒 Your information is encrypted and secure. We'll reply within 2 hours.
+                </p>
+            </form>
+            <div id="orderSuccess" style="display:none;text-align:center;padding:32px 0;">
+                <div style="font-size:64px;margin-bottom:16px;">✅</div>
+                <h3 style="color:var(--text-bright);margin-bottom:8px;">Order Received!</h3>
+                <p style="color:var(--text-muted);font-size:14px;">We've received your order and will reach out to your email within 2 hours with payment instructions and campaign details.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // FAQ toggle
+        function toggleFaq(btn) {
+            const item = btn.parentElement;
+            const answer = item.querySelector('.faq-answer');
+            const isActive = item.classList.contains('active');
+
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(i => {
+                i.classList.remove('active');
+                i.querySelector('.faq-answer').style.maxHeight = '0';
+            });
+
+            if (!isActive) {
+                item.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        }
+
+        // Modal
+        function openModal(e, pkg) {
+            e && e.preventDefault();
+            document.getElementById('orderModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+            if (pkg) {
+                document.getElementById('packageSelect').value = pkg;
+            }
+            // Reset form view
+            document.getElementById('orderForm').style.display = 'block';
+            document.getElementById('orderSuccess').style.display = 'none';
+        }
+
+        function closeModal() {
+            document.getElementById('orderModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on overlay click
+        document.getElementById('orderModal').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) closeModal();
+        });
+
+        // Close modal on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Form submission
+        function submitOrder(e) {
+            e.preventDefault();
+            const form = e.target;
+            const data = new FormData(form);
+
+            // Here you would send data to your backend / email service
+            // For now, show success message
+            console.log('Order submitted:', Object.fromEntries(data));
+
+            // Show success
+            form.style.display = 'none';
+            document.getElementById('orderSuccess').style.display = 'block';
+
+            // Optional: Send to your email via a service like Formspree, EmailJS, etc.
+            // fetch('https://formspree.io/f/YOUR_ID', { method: 'POST', body: data });
+        }
+
+        // Mobile menu
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+        }
+
+        // Animate numbers (hero stats)
+        function animateValue(el, start, end, duration, suffix) {
+            let startTime = null;
+            const step = (timestamp) => {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                el.innerHTML = value.toLocaleString() + '<span>' + suffix + '</span>';
+                if (progress < 1) requestAnimationFrame(step);
+            };
+            requestAnimationFrame(step);
+        }
+
+        // Trigger stat animation when hero is visible
+        const heroStatObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const stats = entry.target.querySelectorAll('.hero-stat h3');
+                    if (stats[0]) animateValue(stats[0], 0, 2.4, 2000, 'M+');
+                    // Keep other stats static for simplicity
+                    heroStatObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) heroStatObserver.observe(heroStats);
+    </script>
+</body>
+</html>

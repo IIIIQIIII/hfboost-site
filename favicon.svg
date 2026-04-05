@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280">
+  <!-- Left cat ear -->
+  <path d="M58 65 L78 8 Q80 3 85 5 L108 52" fill="#FFD21E" stroke="#FF9D00" stroke-width="4"/>
+  <path d="M68 58 L82 20 L100 52" fill="#FFB347"/>
+  <!-- Right cat ear -->
+  <path d="M198 65 L178 8 Q176 3 171 5 L148 52" fill="#FFD21E" stroke="#FF9D00" stroke-width="4"/>
+  <path d="M188 58 L174 20 L156 52" fill="#FFB347"/>
+  <!-- Face circle -->
+  <g transform="translate(12, 24)">
+    <circle cx="127.5" cy="133" r="80" fill="#FFD21E"/>
+    <!-- Eyes -->
+    <ellipse cx="95" cy="115" rx="12" ry="14" fill="#32343D"/>
+    <ellipse cx="160" cy="115" rx="12" ry="14" fill="#32343D"/>
+    <!-- Eye shine -->
+    <circle cx="99" cy="110" r="4" fill="#FFAD03"/>
+    <circle cx="164" cy="110" r="4" fill="#FFAD03"/>
+    <!-- Mouth -->
+    <path d="M110 148 Q127.5 165 145 148" fill="#FF323D" stroke="none"/>
+    <path d="M110 148 Q127.5 140 145 148" fill="#32343D" stroke="none"/>
+  </g>
+</svg>
